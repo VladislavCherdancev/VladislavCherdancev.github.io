@@ -6,6 +6,8 @@ nav{
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
+    z-index: 1;
 }
 .logo{
     color: white;
@@ -13,12 +15,15 @@ nav{
     line-height: 60px;
     padding-left: 250px;
     float: left;
+    -webkit-animation: comming 3s ease;
+    -o-animation: comming 3s ease;
+    animation: comming 3s ease;
 }
 
 .menu{
     float: left;
     padding-left: 100px;
-    
+
 }
 .menu li{
     float: left;
@@ -27,11 +32,15 @@ nav{
     margin-right: 40px;
    font-size: 16px;
     text-transform: uppercase;
+    -webkit-animation: topmenu 0.5s ease forwards;
+    -o-animation: topmenu 0.5s ease forwards;
+    animation: topmenu 0.5s ease forwards;
+    opacity: 0;
 }
 .main{
     width: 100%;
-    height: calc(100% - 60px);
-    background: url(../img/IMG_0144.png) 100% 100%/auto 110%  no-repeat , url(../img/Screenshot_5.png) center/cover no-repeat;
+    height: 110%;
+    background: url(../img/IMG_0144.png) 100% 100%/auto 100%  no-repeat , url(../img/Screenshot_5.png) center/cover no-repeat;
 }
 
 .title__containe{
@@ -39,6 +48,14 @@ nav{
     margin: 200px 0px 0px 200px;
     color: gold;
     text-align: center;
+    -webkit-animation: topleft 1.5s ease forwards;
+    -o-animation: topleft 1.5s ease forwards;
+    animation: topleft 1.5s ease forwards;
+    opacity: 0;
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+   
 }
 
 .title__containe h1{
@@ -48,7 +65,7 @@ nav{
 .title__containe h4{
    margin-top: 40px;
     font-size: 30px;
-    color: dfc8be;
+    color: #dfc8be;
 }
 .title__containe input{
     height: 40px;
@@ -60,6 +77,108 @@ nav{
     font-size: 30px;
     padding: 0px 16px;
     margin: 58px 15px 0px 15px;    
+}
+
+@keyframes topmenu{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes topleft{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 200px;
+    }
+}
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+.title__containe input{
+    transition: all 0.3s;
+    transform: scale(1);
+}
+.title__containe input:hover{
+    background: #094394;
+    color: white;
+}
+.title__containe input:active{
+    transform: scale(1.2);
+}
+.menu li a{
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+.menu li a:visited{
+    color: white;
+}
+.menu li a:hover{
+    color: #e0840a;
+    
+}
+.menu li a:active{
+    transform: scale(1.2)
+}
+.like:hover{
+     color: #e0840a;
+}
+.like4:hover{
+     background: #094394;
+    color: white;
+}
+.like4{
+    transition: all 0.3s;
+    transform: scale(1);
+}
+.like4:active{
+    transform: scale(1.2);
+}
+.tg:hover{
+     background: #094394;
+    color: white;
+}
+.tg{
+    transition: all 0.3s;
+    transform: scale(1);
+}
+.tg:active{
+    transform: scale(1.2);
+}
+.one:hover{
+    color: #e0840a;
+}
+.key:hover{
+     color: #e0840a;
 }
 .logo1{
      background: #e8e6ed;
@@ -230,11 +349,16 @@ width: 50px;
 }
 .like13{
     float:left;
+    text-align: center;
    margin: 50px 0px 0px 550px; 
     font-size: 50px;
 }
+.like13:hover{
+     color: #e0840a;
+}
 .tp{
     float:left;
+    transform-origin: center;
     margin: 200px 0px 0px -400px;
     display:block;
      padding: 12px 160px; 
@@ -247,6 +371,7 @@ width: 50px;
 
 .tp1{
     float:left;
+    transform-origin: center;
      margin: 300px 0px 0px -405px;
      padding: 12px 145px;
  display:block;
@@ -258,6 +383,7 @@ width: 50px;
 
 .tp2{
     float:left;
+    transform-origin: center;
      margin: 400px 0px 0px -410px;
      padding: 12px 120px;
   display:block;
@@ -266,9 +392,11 @@ width: 50px;
     background: #39a1f4;
 }
 .logo5{
-    background:url(../img/Screenshot_10.png) 100% 100%/auto 110%;
     width: 100%;
     height: 370px;
+}
+.logo5{
+   background:url(../img/Screenshot_10.png) 100% 100%/auto 110%;   
 }
 .statys{
    padding: 10px 0px 0px 560px;
@@ -347,6 +475,9 @@ width: 40px;
      padding: 20px 0px 0px 690px;
    font-size: 50px;
     color: black;
+}
+.statys1:hover{
+    color: #e0840a;
 }
 .img7{
     margin: 20px 0px 0px 692px;
@@ -431,6 +562,12 @@ width: 50px;
     font-size: 50px;
     color: #d9dde3;
 }
+.like16:hover{
+    color: #e0840a;
+}
+.like18:hover{
+    color: #e0840a;
+}
 .logo8{
     padding: 30px 0px 100px 0px;
     width: 100%; 
@@ -463,12 +600,90 @@ width: 50px;
     display:block;
     border: 1px solid black;
 }
-.in4{
-  margin: 450px 0px 0px 590px;
-    padding: 12px 120px;
-    display:block;
-    font-size: 40px;
-    border: 1px solid black;
+html, body {
+  height: 100%;
+}
+.wrap {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4FD1C5;
+background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
 }
 .img11{
     float:left;
@@ -503,13 +718,7 @@ width: 50px;
 width: 50px;
      margin: 50px 0px 0px 150px; 
     background-color: #d9dde3;
-    
 }
-
-
-
-
-
 
 
 

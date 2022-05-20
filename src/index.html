@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="scc/style.css">
     <link rel="stylesheet" href="scc/reset.css">
     <title>Черданцев Владислав - разработчик сайтов</title>
+    <script src="/assets/js/jquery-3.5.1.min.js"></script>
     
 </head>
 <body>
@@ -16,24 +17,26 @@
     <nav>
        <div class="logo">Черданцев Владислав</div> 
        <div class="menu"><ul>
-           <li>Обо мне</li>
-           <li>Услуги</li>
-           <li>Кейсы</li>
-           <li>Прайс</li>
-           <li>Отзывы</li>
-           <li>Контакты</li>
+           <li><a href="#">Обо мне</a></li>
+           <li><a href="#">Услуги</a></li>
+           <li><a href="#">Кейсы</a></li>
+           <li><a href="#">Прайс</a></li>
+           <li><a href="#">Отзывы</a></li>
+           <li><a href="#">Контакты</a></li>
        </ul></div>
     </nav>
  </header>
 
 
- <div class="main"><div class="title__containe">
+ <section class="main">
+   <div class="title__containe">
     <h1>Привет <br> Я Черданцев Владислав </h1>
     <h4>Разработчик сайтов</h4>
-   <input type="submit" value="Обо мне">
-    <input type="submit" value="Мои работы">
+   <input type="button" value="Обо мне">
+    <input type="button" value="Мои работы">
   </div>
-  </div>
+  </section>
+ 
  
 <div class="logo1">
 
@@ -111,7 +114,7 @@
  </div>
  
  
- <div class="logo5"> 
+ <div class="logo5"  data-parallax="scroll"> 
     <h1 class="statys"><mark>Немного статистики</mark></h1>
     <img class="img-1" src="img/ikonki/free-icon-font-smile-13.png" alt="">
     <img class="img-2" src="img/ikonki/free-icon-font-time-quarter-to-14.png" alt="">
@@ -173,7 +176,9 @@
     <input class="in2" type="tell" placeholder="Введите ваш телефон">
     <br>
     <textarea class="in3" name="name" id="1" cols="50" rows="10"></textarea>
-    <button class="in4" type="button" name="show_more">Отправить</button>
+    <div class="wrap">
+    <button class="button">Отправить</button>
+    </div>
     </div>
     
     </form>
