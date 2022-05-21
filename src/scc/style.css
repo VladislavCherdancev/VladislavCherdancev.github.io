@@ -391,55 +391,133 @@ width: 50px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     background: #39a1f4;
 }
-.wrapper {
-  height: 300px; /* Высота должна быть фиксированной, 100vh занимает всю высоту видимой области экрана */
-  overflow-x: hidden;
-  overflow-y: auto; /* Прокрутка по вертикали */
-  perspective: 2px; /* Симулируем пространство между экраном и трансформируемым объектом, в данном случае - 2px */
+
+
+
+
+
+
+
+.statys{
+   padding: 10px 0px 0px 15px;
+   font-size: 40px;
+    font-weight:800;
+    color: black;
+}
+.img-1{
+     float:left;
+width: 30px;
+     margin: 10px 0px 0px 400px;
+    
+}
+.img-2{
+     float:left;
+width: 30px;
+     margin: 10px 0px 0px 200px;
+}
+.img-3{
+     float:left;
+width: 30px;
+     margin: 10px 0px 0px 200px;
+}
+.img-4{
+     float:left;
+width: 30px;
+     margin: 10px 0px 0px 200px;
+}
+.logo5{
+  float: left;
+   margin-left: 10px;
+    margin-top: 10px;  
 }
 
-section {
-  position: relative; /* Нужно для позиционирования дочерних элементов */
-  height: 300px; /* Высота элемента */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-shadow: 0 0 5px #000;
-  color: #fff;
+.like-1{
+     float:left;
+   margin: 10px 0px 0px 375px; 
+    font-size: 30px;
 }
-.section h1{
-    width: 50px;
+.like-2{
+     float:left;
+   margin: 10px 0px 0px 140px; 
+    font-size: 30px;
+}
+.like-3{
+     float:left;
+   margin: 10px 0px 0px 140px; 
+    font-size: 30px;
+}
+.like-4{
+     float:left;
+   margin: 10px 0px 0px 165px; 
+    font-size: 30px;
+}
+.like-5{
+     margin: 200px 0px 0px 315px;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.like-6{
+    margin: -33px 0px 0px 585px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.like-7{
+    margin: -33px 0px 0px 800px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.like-8{
+    margin: -33px 0px 0px 1060px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
-.parallax::after {
-  /* Создаем и позиционируем псевдо-элемент */
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transform: translateZ(-1px) scale(1.5); /* Отодвигаем псевдо-элемент от экрана и масштабируем, чтобы заполнить пустое пространство, так как этот элемент находится дальше, он будет двигаться медленее, симулируя повеедение реального отдаленно расположенного объекта */
-  background-size: 100%;
-  z-index: -1; /* Упреждаем перекрытие дочерними элементами */
+
+
+.parallax-img {
+  height: 100px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* Фон для статичного объекта */
-.static {
-     height: 100px;
-  background-color: #e9e9ef;
+/* Other styling elements, that are not necessary for the example */
+
+body {
+  margin:;
+  background: #406868;
 }
 
-/* Фоновые картинки для отдаленных объектов */
-.bg1::after {
+
+
+h1 {
+  margin: 25px;
+  text-align: center;
+}
+
+p {
+  margin: 25px;
+  font-size: 1.1rem;
+}
+
+.parallax-img {
   background-image: url(../img/Screenshot_10.png);
-  background-position: center top;
 }
 
-.bg2::after {
-  background-image: url(../img/Screenshot_55.png);
-  background-position: center bottom;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 .logo6{
     padding: 20px 0px 150px 0px;
     width: 100%; 
@@ -606,7 +684,7 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
   padding: 10px;
   }
 
-button::before {
+.button::before {
 content: '';
   border-radius: 1000px;
   min-width: calc(300px + 12px);
@@ -626,11 +704,11 @@ content: '';
   transform: translateY(-6px);
 }
 
-button:hover::before, button:focus::before {
+.button:hover::before, button:focus::before {
   opacity: 1;
 }
 
-button::after {
+.button::after {
   content: '';
   width: 30px; height: 30px;
   border-radius: 100%;
@@ -643,7 +721,7 @@ button::after {
   animation: ring 1.5s infinite;
 }
 
-button:hover::after, button:focus::after {
+.button:hover::after, button:focus::after {
   animation: none;
   display: none;
 }
