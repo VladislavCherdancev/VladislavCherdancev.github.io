@@ -398,113 +398,160 @@ width: 50px;
 
 
 
-.statys{
-   padding: 10px 0px 0px 15px;
-   font-size: 40px;
-    font-weight:800;
-    color: black;
-}
-.img-1{
-     float:left;
-width: 30px;
-     margin: 10px 0px 0px 400px;
-    
-}
-.img-2{
-     float:left;
-width: 30px;
-     margin: 10px 0px 0px 200px;
-}
-.img-3{
-     float:left;
-width: 30px;
-     margin: 10px 0px 0px 200px;
-}
-.img-4{
-     float:left;
-width: 30px;
-     margin: 10px 0px 0px 200px;
-}
-.logo5{
-  float: left;
-   margin-left: 10px;
-    margin-top: 10px;  
-}
 
-.like-1{
-     float:left;
-   margin: 10px 0px 0px 375px; 
-    font-size: 30px;
-}
-.like-2{
-     float:left;
-   margin: 10px 0px 0px 140px; 
-    font-size: 30px;
-}
-.like-3{
-     float:left;
-   margin: 10px 0px 0px 140px; 
-    font-size: 30px;
-}
-.like-4{
-     float:left;
-   margin: 10px 0px 0px 165px; 
-    font-size: 30px;
-}
-.like-5{
-     margin: 200px 0px 0px 315px;
-    font-size: 20px;
-    font-weight: 700;
 
-}
-.like-6{
-    margin: -33px 0px 0px 585px;
-    font-size: 20px;
-    font-weight: 700;
-}
-.like-7{
-    margin: -33px 0px 0px 800px;
-    font-size: 20px;
-    font-weight: 700;
-}
-.like-8{
-    margin: -33px 0px 0px 1060px;
-    font-size: 20px;
-    font-weight: 700;
+
+
+.eng{
+    background-color: blue;
+    font-weight: 600;
+    font-size: 50px;
+    font-style: italic;
+    color: gold;
+    text-align: center;
 }
 
 
 
-.parallax-img {
-  height: 100px;
-  background-attachment: fixed;
+
+
+.designeka,
+.secondimg,
+.kaadesaen,
+.forthimg {
+  position: relative;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  /*
+  fixed = parallax
+  scroll = normal
+  */
+  background-attachment: fixed;
 }
 
-/* Other styling elements, that are not necessary for the example */
+.designeka {
+  background-image: url(../img/businessman-pointing-at-his-presentation-on-the-futuristic-digital-screen.png);
+  min-height: 40%;
+}
 
-body {
-  margin:;
-  background: #406868;
+.secondimg {
+  background-image: url(../img/close-up-of-businessman-looking-at-his-modern-wristwatch.png);
+  min-height: 40%;
+}
+
+.kaadesaen {
+  background-image: url(../img/complete-combat-equipment-of-the-ancient-greek-warrior-on-a-wooden-boards-background.png);
+  min-height: 40%;
 }
 
 
 
-h1 {
-  margin: 25px;
+.section {
+  pesamum-align: center;
+  padding: 50px 80px;
+}
+
+.kaanced-nekis {
+  background-color: #d8d9db;
+  color: black;
+}
+
+.pesamun {
+  position: absolute;
+  top: 50%;
+  width: 100%;
   text-align: center;
+  color: #252424;
+  font-size: 27px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
 }
 
-p {
-  margin: 25px;
-  font-size: 1.1rem;
+.pesamun .anekasearn {
+  background-color: #d8d9db;
+  color: orange;
+  padding: 20px;
+    font-weight: 600;
 }
 
-.parallax-img {
-  background-image: url(../img/Screenshot_10.png);
+@media (max-width: 568px) {
+  .designeka,
+  .secondimg,
+  .kaadesaen,
+  .forthimg {
+  background-attachment: scroll;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
