@@ -6,8 +6,10 @@
     <meta name="author" content="Vladislav">
     <meta name="robots" content="all">
     <meta property="og:titlle" content="Это моя первая страница">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="scc/style.css">
     <link rel="stylesheet" href="scc/reset.css">
+    <link rel="stylesheet" href="scc/bootstrap.min.css">
     <title>Черданцев Владислав - разработчик сайтов</title>
     <script src="/assets/js/jquery-3.5.1.min.js"></script>
     
@@ -15,247 +17,125 @@
 <body>
 <header>
     <nav>
-       <div class="logo">Черданцев Владислав</div> 
-       <div class="menu"><ul>
+      <div class="container">
+          <div class="row">
+         <div class="col-xxl-4 col-md-3 col-7"><div class="logo">Черданцев Владислав</div> 
+        </div>
+ <div class="px-0 col-xxl-6 col-xl-7 col-md-8 offset-xxl-2 offset-xl-2 offset-md-1 d-none d-md-block"><div class="menu">
+       <ul>
            <li><a href="#">Обо мне</a></li>
            <li><a href="#">Услуги</a></li>
            <li><a href="#">Кейсы</a></li>
            <li><a href="#">Прайс</a></li>
            <li><a href="#">Отзывы</a></li>
            <li><a href="#">Контакты</a></li>
-       </ul></div>
-    </nav>
+       </ul>
+ </div>
+         </div>
+          <div class="col-5 d-flex d-md-none flex-column justify-content-center align-items-end">
+            <div class="dropdown">
+  <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Навигация</a>
+  
+ <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   
+           <li><a class="dropdown-item" href="#">Обо мне</a></li>
+           <li><a class="dropdown-item" href="#">Услуги</a></li>
+           <li><a class="dropdown-item" href="#">Кейсы</a></li>
+           <li><a class="dropdown-item" href="#">Прайс</a></li>
+           <li><a class="dropdown-item" href="#">Отзывы</a></li>
+           <li><a class="dropdown-item" href="#">Контакты</a></li>
+ </ul>
+                        </div>
+                   </div>
+               </div>
+           </div>
+       </nav>
  </header>
-
-
  <section class="main">
-   <div class="title__containe">
-    <h1>Привет <br> Я Черданцев Владислав </h1>
-    <h4>Разработчик сайтов</h4>
-   <input type="button" value="Обо мне">
-    <input type="button" value="Мои работы">
+  <div class="container h-100">
+    <div class="row align-items-center h-100">
+      <div class="col-lg-6">
+        <div class="title__containe">
+          <h1>Привет <br> Я Черданцев Владислав </h1>
+              <h4>Разработчик сайтов</h4>
+          <input type="button" value="Обо мне">
+        <input type="button" value="Мои работы">
+      </div>
+    </div>
   </div>
-  </section>
- 
- 
-<div class="logo1">
-
-<h2 class="like">Обо мне</h2>
-
-<img class="img" src="img/Screenshot_7%20radius.png" alt="">
-
-<p class="like2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Nemo similique accusamus explicabo non itaque est ipsam necessitatibus<br> doloribus quaerat aliquam nisi, exercitationem, fuga molestiae dolore illum obcaecati officia maiores! Voluptas!</p>
-<p class="like3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, reprehenderit!<br> Similique ullam eum incidunt commodi, ratione fugiat. Maiores, totam, quasi.</p>
-<a href="https://t.me/Vladislav_cherdancev93" class="like4">Написать мне</a>
 </div>
-
-<div class="logo2">
-
- <h2 class="one">Что я умею</h2>
-<img class="img1" src="img/ikonki/free-animated-icon-idea-1.png" alt="">
-<img class="img2" src="img/ikonki/free-animated-icon-note-2.png" alt="">
-<img class="img3" src="img/ikonki/free-animated-icon-rocket-4.png" alt="">
-<img class="img4" src="img/ikonki/free-animated-icon-phone-3.png" alt="">
-   <ul>
-    <li class="dis1">Веб дизайн</li>
-    </ul>
-    <ul>
-    <li class="dis2">Разработка</li>
-    </ul>
-    <ul>
-    <li class="dis3">СЕО-оптимиизация</li>
-    </ul>
-      <ul>
-    <li class="dis4">Маркетинг</li>  
-     </ul>
-<p class="like5">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.<br>Officia deserunt, perferendis<br>repellendus obcaecati id vel.</p>
-<p class="like6">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.<br>Officia deserunt, perferendis<br>repellendus obcaecati id vel.</p>
-<p class="like7">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.<br>Officia deserunt, perferendis<br>repellendus obcaecati id vel.</p>
-<p class="like8">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.<br>Officia deserunt, perferendis<br>repellendus obcaecati id vel.</p>
-   
- </div>
-
- <div class="logo3">
-
- <input class="key" type="submit" value="Кейсы">
-    <p class="like9">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis soluta, eaque sunt asperiores dolor quod.</p>
-    <img class="img5" src="img/Screenshot_1.png" alt="">
-    <br>
-    <p class="like10">Lorem <br>ipsum dolar.</p>
-    
-    <p class="like11">Lorem <br>ipsum dolor.</p>
-    <br>
-    <p class="like12">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Mollitia ut non esse expedita illum, maxime voluptatum dolorem quo,<br> quis voluptate at voluptas excepturi hic molestiae cumque quae amet facilis impedit.</p>
-    <br>
-    <a class='tg' href="https://t.me/Vladislav_cherdancev93">Перейти на сайт</a>
-   
- </div>
-   
- <div class="logo4">
-   
-   <h2 class="like13">Расчет стоимости</h2>
-   
-    <select class="tp" name="list1" id="list2">
-    <option value="opt1">Тип сайта</option>               
-    <option value="opt2">Дешевый</option> 
-    <option value="opt3">Дорогой</option> 
-    </select>
-    <select class="tp1" name="list1" id="list2">
-    <option value="opt1">Дизайн</option>
-    <option value="opt2">Простой</option> 
-    <option value="opt3">Вип разработка</option> 
-    </select>
-    <select class="tp2" name="list1" id="list2">
-    <option value="opt3">Адаптивность</option>   
-    <option value="opt1">Под ключ</option> 
-    <option value="opt1">С вашими пожеланиями</option> 
-    </select>
+ </section>
+ 
+ 
+ 
+ 
+ 
+ <div class="container">
+     <div class="row">
      
+          <div class="col-12">
+                <div class="text-bg-secondary p-2 text-center fs-1">Обо мне</div>
+          </div> 
+     </div>
+          <div class="row">
+                <div class="col-12">
+              <img src="img/Screenshot_7%20radius.png" class="rounded mx-auto d-block rounded-circle mt-4" alt="...">
+          </div>
+     </div>
+      
+     <div class="row">
+        <div class="col-12 mt-4 text-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Nemo similique accusamus explicabo non itaque est ipsam necessitatibus<br> doloribus quaerat aliquam nisi, exercitationem, fuga molestiae dolore illum obcaecati officia maiores! Voluptas!</p>
+        </div>
+        <div class="col-12 mt-2 text-center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, reprehenderit!<br> Similique ullam eum incidunt commodi, ratione fugiat. Maiores, totam, quasi.</p>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-12 mt-4 text-center">
+             <a href="https://t.me/Vladislav_cherdancev93" class="btn btn-primary active" role="button" data-bs-toggle="button" >Связь с автором</a>
+          </div>
+      </div>
+ <div class="container-fluid">
+  <div class="row mt-5">	
+  <div class="img-wrap">		
+    <img src="img/Screenshot_1.png" class="float-left">
+    <h2 class="p-2 text-center">text</h2>
  </div>
+</div>	  		
+</div>
  
- 
- 
- 
- 
- 
- 
- 
- <div class="eng">
-     <h1>»»»Немного статистики«««</h1>
- </div>
- 
- 
- 
- <div class="designeka">
- 
-  <div class="pesamun">
-  <span class="anekasearn">
-  120 Счасливых клиентов.
-  </span>
-  </div>
-  </div>
-
-  <section class="section kaanced-nekis">
-  <h2></h2>
-  <p>
-  Мир меняется и адаптивные модели нужны, потому что нужны новые продукты, новые услуги, новые процессы, в том числе управленческие. Для этого нужно уметь совмещать желаемое, с точки зрения клиента, — с одной стороны, технологически возможное — с другой, и экономически оправданное — с третьей.
-  </p>
-  </section>
-
-  <div class="secondimg">
-  <div class="pesamun">
-  <span class="anekasearn anance">
-  4,600 Часов работы.
-  </span>
-  </div>
-  </div>
-
-  <section class="section kaanced-nekis">
-  <h2></h2>
-  <p>
-  Время проходит, вот в чем беда. Прошлое растет, а будущее сокращается. Все меньше шансов что-нибудь сделать — и все обиднее за то, чего не успел.
-  <br>
-  Не тратьте своё время на поиски, доверьте свой проект мне и получите желанный результат в короткие сроки!
-  </p>
-  </section>
-
-  <div class="kaadesaen">
-  <div class="pesamun">
-  <span class="anekasearn anance">
-340 проектов завершено.
-  </span>
-  </div>
-  </div>
-
-  <section class="section kaanced-nekis">
-  <h2></h2>
-  <p>
-  Все вещи создаются дважды. Первый раз ментально, второй раз – физически. Ключ к креативности в том, чтобы начинать работу зная заранее результат, который хочешь получить
-  </p>
-  </section>
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-   
-    <div class="logo6">
-    <h1 class="statys1">Отзывы</h1>
-    <br>
-    <img class="img7" src="img/Screenshot_6.png" alt="">
-    <br>
-    <p class="like14"><mark>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime assumenda aliquam, quod corrupti <br>quaerat laboriosam aut atque, dolorem, excepturi ea molestias non illum. Perferendis, dignissimos.</mark></p>
-    <br>
-    <span class="like15"span><mark>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, esse!</mark></span>
-    
-    </div>
-   
- <div class="logo7">
-   
-    <h2 class="like16">Мои контакты</h2>
-    <p class="like17">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae sint doloribus,<br> explicabo aliquid repellendus earum architecto ducimus reprehenderit quam unde, modi perspiciatis culpa quibusdam repellat.</p>
-    <img class="img8" src="img/ikonki/free-icon-font-marker-9.png" alt="">
-    <img class="img9" src="img/ikonki/free-icon-font-comment-alt-5.png" alt="">
-    <img class="img10" src="img/ikonki/free-animated-icon-phone-3.png" alt="">
-
-   <ul>
-    <li class="dis5">г.Тюмень</li>
-   </ul> 
-    <ul>
-    <li class="dis6">vlad.cherdancev.93@mail.ru</li>
-   </ul> 
-    <ul>
-    <li class="dis7">+7(982)9225652</li>
-   </ul>
- 
-    <h2 class="like18">Оставьте мне сообщение</h2>
-    <form action="vlad.cherdancev.93@mail.ru">
-    <div class="logo8">
-    <input class="in" type="text" name="text_input" value="" placeholder="Введите ваше имя">
-    <br>
-    <input class="in1" type="text" name="text_input" value="" placeholder="Введите вашу почту">
-    <br>
-    <input class="in2" type="tell" placeholder="Введите ваш телефон">
-    <br>
-    <textarea class="in3" name="name" id="1" cols="50" rows="10"></textarea>
-    <div class="wrap">
-    <button class="button">Отправить</button>
-    </div>
-    </div>
-    
-    </form>
-    
-    <div class="menu1">
-    <img class="img11" src="img/ikonki/free-icon-font-linkedin-8.png" alt="">
-    <img class="img12" src="img/ikonki/free-icon-font-instagram-7.png" alt="">
-    <img class="img13" src="img/ikonki/free-icon-font-facebook-6.png" alt="">
-    <img class="img14" src="img/ikonki/free-icon-font-telegram-11.png" alt="">
-    <img class="img15" src="img/ikonki/free-icon-font-youtube-12.png" alt="">
- </div>
- 
- </div> 
- 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br> 
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
