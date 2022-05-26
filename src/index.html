@@ -110,7 +110,7 @@
 <div class="container">
 
                   <div class="row justify-content-center text-center  mt-5 pt-5">
- <div class="c">
+ <div class="col-sm-6 col-md-3 fs-3">
         <p class="fa-solid fa-desktop"></p>
         <p>Веб дизайн</p>
         <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.<br>Officia deserunt, perferendis<br>repellendus obcaecati id vel.</p>
@@ -140,7 +140,7 @@
               <div class="col-12">
                    <div class="text-bg-primary p-3 fs-1 text-center">Кейсы</div>
         <p class="fa-solid fa-window-minimize"></p>
-        <p class="fs-3"><mark>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis soluta, eaque sunt asperiores dolor quod.</mark></p>
+        <p class="fs-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis soluta, eaque sunt asperiores dolor quod.</p>
                      </div>
                  </div>
              </div> 
@@ -209,30 +209,151 @@
     <div class="container">
         <div class="row  justify-content-center">
              <div class="col-3 offset-2">
-                  <h1 class="text-white">Lorem</h1>
-                      <p class="text-white">ipsum dolar.</p>
-                      <h1 class="text-white">Lorem </h1>
-                    <p class="text-white">ipsum dolar.</p>
+                  <h1>Lorem</h1>
+                      <p>ipsum dolar.</p>
+                      <h1>Lorem </h1>
+                    <p>ipsum dolar.</p>
                  </div>
               <div class="col-6 mt-5 pt-5">
-         <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ut non esse expedita illum, maxime voluptatum dolorem quo, quis voluptate at voluptas excepturi hic molestiae cumque quae amet facilis impedit.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ut non esse expedita illum,<br> maxime voluptatum dolorem quo, quis voluptate at voluptas excepturi <br>hic molestiae cumque quae amet facilis impedit.</p>
       </div>
     </div>
  </div>   
     
  <div class="container">
     <div class="row">
-        <div class="col-6 mt-4 text-center">
+        <div class="col-6 mt-5 text-center">
             <a class="btn btn-primary" href="https://t.me/Vladislav_cherdancev93" role="button">Перейти на сайт</a>
         </div>
     </div>
 </div>
      </section>
+              
+              <section class="fon-2">
+                  <div class="container">
+                      <div class="row text-center">
+                          <div class="col-12">
+                              <span class="badge text-bg-info fs-1 mt-5">Расчет стоимости</span>
+                          </div>
+                      </div>
+                  </div>
+                
+<div class="container">
+<div class="row">
+<div class="col-md-6 offset-md-3 mb-1 mt-3">
+ <div class="container">
+     <div class="row">
+         <div class="col-12">
+             <h1>Тип сайта</h1>
+         </div>
+     </div>
+ </div>
+ <select class="form-control" id="myselect">
+ <option value="0" selected>Выберите пункт...</option>
+ <option value="1">Коммерческий</option>
+ <option value="2">Информационный</option>
+ <option value="3">Социальный</option>
+ </select>
+  <div class="container">
+     <div class="row">
+         <div class="col-12">
+             <h1>Дизайн</h1>
+         </div>
+     </div>
+ </div>
+ <select class="form-control" id="myselect">
+ <option value="0">Выберите пункт...</option>
+ <option value="1">Классический</option>
+ <option value="2">Минимализм</option>
+ <option value="3">Рисованный</option>
+ <option value="4">Organic Natural</option>
+ </select>
+  <div class="container">
+     <div class="row">
+         <div class="col-12">
+             <h1>Адаптивность</h1>
+         </div>
+     </div>
+ </div>
+ <select class="form-control" id="myselect">
+ <option value="0">Выберите пункт...</option>
+ <option value="1">Только ПК</option>
+ <option value="2">Только мобильные телефоны</option>
+ <option value="2">Мобильные телефоны и ПК</option>
+ </select>
+</div>
+</div>
+</div>
+              </section>
                
+   <script>
+$(document).ready(function(){
+ var selected = localStorage.getItem('select');
+ if (selected) {
+ $('#myselect').val(selected);
+ }
+
+ $('#myselect').change(function(){
+ localStorage.setItem('select', $(this).val());
+ });
+});
+</script>            
                
-               
-               
-               
+              
+    <div class="container" class="fon-3">
+        <div class="row text-center">
+            <div class="col-12">
+                 <h1>»»»Немного статистики«««</h1>
+            </div>
+        </div>
+     </div>
+ <div class="designeka">
+ 
+  <div class="pesamun">
+  <span class="anekasearn"> 120 Счасливых клиентов.</span>
+  </div>
+  </div>
+
+  <section class="section kaanced-nekis">
+  <h2></h2>
+  <p>
+  Мир меняется и адаптивные модели нужны, потому что нужны новые продукты, новые услуги, новые процессы, в том числе управленческие. Для этого нужно уметь совмещать желаемое, с точки зрения клиента, — с одной стороны, технологически возможное — с другой, и экономически оправданное — с третьей.
+  </p>
+  </section>
+
+  <div class="secondimg">
+  <div class="pesamun">
+  <span class="anekasearn anance">
+  4,600 Часов работы.
+  </span>
+  </div>
+  </div>
+
+  <section class="section kaanced-nekis">
+  <h2></h2>
+  <p>
+  Время проходит, вот в чем беда. Прошлое растет, а будущее сокращается. Все меньше шансов что-нибудь сделать — и все обиднее за то, чего не успел.
+  <br>
+  Не тратьте своё время на поиски, доверьте свой проект мне и получите желанный результат в короткие сроки!
+  </p>
+  </section>
+
+  <div class="kaadesaen">
+  <div class="pesamun">
+  <span class="anekasearn anance">
+340 проектов завершено.
+  </span>
+  </div>
+  </div>
+
+  <section class="section kaanced-nekis">
+  <h2></h2>
+  <p>
+  Все вещи создаются дважды. Первый раз ментально, второй раз – физически. Ключ к креативности в том, чтобы начинать работу зная заранее результат, который хочешь получить
+  </p>
+  </section>
+
+           
                
                
                

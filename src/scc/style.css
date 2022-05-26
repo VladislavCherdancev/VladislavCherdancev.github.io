@@ -185,6 +185,124 @@ transform: scale(1.2)
     height: 930px;
      background: #dee1e4;
 }
+.fon-2{
+    height: 500px;
+     background: #17968b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.designeka,
+.secondimg,
+.kaadesaen,
+.forthimg {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  /*
+  fixed = parallax
+  scroll = normal
+  */
+  background-attachment: fixed;
+}
+
+.designeka {
+  background-image: url(../img/fon.png);
+  min-height: 40%;
+}
+
+.secondimg {
+  background-image: url(../img/close-up-of-businessman-looking-at-his-modern-wristwatch.png);
+  min-height: 40%;
+}
+
+.kaadesaen {
+  background-image: url(../img/complete-combat-equipment-of-the-ancient-greek-warrior-on-a-wooden-boards-background.png);
+  min-height: 40%;
+}
+
+
+
+.section {
+  pesamum-align: center;
+  padding: 50px 80px;
+}
+
+.kaanced-nekis {
+  background-color: #d8d9db;
+  color: black;
+}
+
+.pesamun {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #252424;
+  font-size: 27px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.pesamun .anekasearn {
+  background-color: #d8d9db;
+  color: orange;
+  padding: 20px;
+    font-weight: 600;
+}
+
+@media (max-width: 568px) {
+  .designeka,
+  .secondimg,
+  .kaadesaen,
+  .forthimg {
+  background-attachment: scroll;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <style>
 /* demo background */
@@ -265,6 +383,7 @@ background: linear-gradient(to right, #6f0000, #200122);
  }
 }
 </style>
+
 
 
 
