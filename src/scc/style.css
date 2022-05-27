@@ -28,8 +28,8 @@ nav{
     float: left;
     line-height: 60px;
     color: white;
-    margin-right: 30px;
-   font-size: 14px;
+    margin-right: 20px;
+   font-size: 11px;
     text-transform: uppercase;
     -webkit-animation: topmenu 0.5s ease forwards;
     -o-animation: topmenu 0.5s ease forwards;
@@ -175,28 +175,92 @@ transform: scale(1.2)
     }
 }
 
+
 .animation{
     transition: all 0.1s;
-    color: white;
+    color: blue;
     transform: scale(1);
+    display: inline-block;
+    text-decoration: none;
+}
+.animation:visited{
+    color: blue;
 }
 
+.animation:hover{
+    color: #e0840a;
+}
 
+.animation:active{
+transform: scale(1.2);
+}
 
+.badge{
+     transition: all 0.1s;
+    color: blue;
+    transform: scale(1);
+    display: inline-block;   
+}
+.badge:visited{
+    color: blue;
+}
+.badge:active{
+transform: scale(1.2);
+}
+.animation-1{
+    transition: all 0.1s;
+    color: black;
+    transform: scale(1);
+    display: inline-block;
+}
+.animation-1:visited{
+    color: black;
+}
 
+.animation-1:hover{
+    color: #e0840a;
+}
 
+.animation-1:active{
+transform: scale(1.2);
+}
 
+.text-warning{
+    transition: all 0.1s;
+    color: black;
+    transform: scale(1);
+    display: inline-block;
+    
+}
+.text-warning:visited{
+    color: black;
+}
 
+.text-warning:hover{
+    color: #e0840a;
+}
 
+.text-warning:active{
+transform: scale(1.2);
+}
+.text-light{
+    transition: all 0.1s;
+    color: black;
+    transform: scale(1);
+    display: inline-block;
+    
+}
+.text-light:visited{
+    color: yellow;
+}
 
+.text-light:hover{
+    color: #e0840a;
+}
 
-
-
-
-
-
-
-
+.text-light:active{
+transform: scale(1.2);
+}
 
 
 
@@ -246,7 +310,7 @@ transform: scale(1.2)
      background: #76787e;
 }
 .fon-5{
-     height: 680px;
+     height: 600px;
      background: url(../img/Screenshot_2.jpg) ;
 }
 .fon-6{
