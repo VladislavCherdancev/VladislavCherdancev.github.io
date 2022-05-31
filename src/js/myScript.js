@@ -4,7 +4,7 @@
 
   var  siteType , design , adaptability, sum = 0;
    
-   let sum = 0;
+  let sum = 0;
       
   let siteType = prompt( "Тип сайта.  1.коммерческий, 2.информационный, 3.социальный");
                        
