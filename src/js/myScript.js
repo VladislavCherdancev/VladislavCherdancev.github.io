@@ -74,7 +74,16 @@ function onEntry (entry){
 }
 
 
+$(document).ready(function(){
+ var selected = localStorage.getItem('select');
+ if (selected) {
+ $('#myselect').val(selected);
+ }
 
+ $('#myselect').change(function(){
+ localStorage.setItem('select', $(this).val());
+ });
+});
 
 
 
