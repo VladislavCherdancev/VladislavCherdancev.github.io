@@ -55,7 +55,7 @@ $(document). ready(function(){
     
   
  let options = {threshold: [0.5]};
-    let observer = new intersectionObserver(onEntry, options);
+    let observer = new IntersectionObserver(onEntry, options);
     let elements = $('.statistics');
     elements.each((i, el) => {
     observer.observe(el);    
