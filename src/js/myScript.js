@@ -1,4 +1,4 @@
-"use strict"
+/*"use strict"
 
   function calc(){
 
@@ -8,7 +8,7 @@
                        
    design = prompt( "Дизай. 1.классический, 2.минимализм, 3.рисованный");
 
-   adaptability = prompt( "Адаптивность. 1.только ПК, 2.только мобильные телефоны, 3.ПК и мбольные телефоны");
+   adaptability = prompt( "Адаптивность. 1.только ПК, 2.только мобильные телефоны, 3.ПК и мобильные телефоны");
    
      if (siteType == "1") {sum = sum + 1000};
       
@@ -34,4 +34,77 @@
       
   }
      
-  calc();
+  calc();*/
+
+$(document). ready(function(){
+    
+ $(window).scroll(() => {
+   let scrollDistance = $(window).scrollTop();
+   $(".scroll").each((i, el) => {
+    if($(el).offset(). top - $("nav").outerHeight() <= scrollDistance){
+        $("nav a").each((i, el) => {
+          if ($(el).hasClass("active")){
+              $(el).removeClass("active");
+          }  
+        });
+        $('nav li:eq('+ i +')').find('a').addClass('active');
+    }   
+   });
+ });    
+    
+    
+  
+ let options = {threshold: [0.5]};
+    let observer = new intersectionObserver(onEntry, options);
+    let elements = $('.statistics');
+    elements.each((i, el) => {
+    observer.observe(el);    
+    });
+      
+
+});
+
+
+function onEntry (entry){
+    entry.forEach(change => {
+    if (change.isIntersecting){
+        change.target.classList.add('statistics-1');
+    }    
+    });
+}
+
+
+
+
+
+
+
+
+$('a[href^="#"]').click (function(){
+    let valHref = $(this). attr ("href");
+    $('html,body'). animate({scrollTop: $(valHref). offset().top - 60 + "px"});
+});
+    
+  
+    
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

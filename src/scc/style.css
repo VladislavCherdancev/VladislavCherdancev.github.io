@@ -261,6 +261,17 @@ transform: scale(1.2);
 }
 
 
+/* анимация для статистики*/
+
+.statistics{
+   opacity: 0; 
+}
+
+.statistics. statistics-1{
+   opacity: 1; 
+    transition: opacity 1s;
+}
+
 
 
 
@@ -351,7 +362,6 @@ transform: scale(1.2);
 
 
 
-
 .designeka,
 .secondimg,
 .kaadesaen,
@@ -421,11 +431,6 @@ transform: scale(1.2);
   background-attachment: scroll;
   }
 }
-
-
-
-
-
 
 
 
