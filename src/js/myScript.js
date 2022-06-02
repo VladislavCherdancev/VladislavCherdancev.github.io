@@ -54,21 +54,21 @@ $(document). ready(function(){
     
     
   
- let options = {threshold: [0.5]};
+ let options = {threshold: [1]};
     let observer = new IntersectionObserver(onEntry, options);
-    let elements = $('.statistics');
+    let elements = $('.statistics-1');
     elements.each((i, el) => {
     observer.observe(el);    
     });
       
 
-});
 
+});
 
 function onEntry (entry){
     entry.forEach(change => {
     if (change.isIntersecting){
-        change.target.classList.add('statistics-1');
+        change.target.classList.add('statistics-0');
     }    
     });
 }
@@ -95,7 +95,48 @@ $('a[href^="#"]').click (function(){
 });
     
   
-    
+ /*CanvasEffect*/
+var w = canvaseffect.width = window.innerWidth,
+ h = canvaseffect.height = window.innerHeight,
+ ctx = canvaseffect.getContext('2d'),
+ 
+ total = w,
+ accelleration = .05,
+ 
+ size = w/total,
+ occupation = w/total,
+ repaintColor = 'rgba(0, 0, 0, .04)'
+ colors = [],
+ dots = [],
+ dotsVel = [];
+
+var portion = 360/total;
+for(var i = 0; i < total; ++i){
+ colors[i] = portion * i;
+ 
+ dots[i] = h;
+ dotsVel[i] = 10;
+}
+
+function anim(){
+ window.requestAnimationFrame(anim);
+ 
+ ctx.fillStyle = repaintColor;
+ ctx.fillRect(0, 0, w, h);
+ 
+ for(var i = 0; i < total; ++i){
+ var currentY = dots[i] - 1;
+ dots[i] += dotsVel[i] += accelleration;
+ 
+ ctx.fillStyle = 'hsl('+ colors[i] + ', 80%, 50%)';
+ ctx.fillRect(occupation * i, currentY, size, dotsVel[i] + 1);
+ 
+ if(dots[i] > h && Math.random() < .01){
+ dots[i] = dotsVel[i] = 0;
+ }
+ }
+}
+anim();
     
  
     
