@@ -41,8 +41,9 @@ nav{
    
 }
 .main{
+    position: relative;
     width: 100%;
-    height: 102%; 
+    height: 100%; 
     
 }
 
@@ -55,7 +56,9 @@ text-shadow: rgb(204, 204, 204) 0px 1px 0px, rgb(201, 201, 201) 0px 2px 0px, rgb
  #canvaseffect{
  position: absolute;
  top:0; left:0;
- opacity: 8;
+ opacity: 6;
+    width: 100%;
+    height: 100%;  
     
     }
 
@@ -393,11 +396,12 @@ transform: scale(1.2);
     max-width: 100%
 }
 .block{
-    height: 3px;
-     background: blue;
+    height: 1px;
+     background: white;
 }
 .fon-0{
-     height: 670px;
+    width: 100%;
+     height: 550px;
     background: url(../img/kosmos_zemlya.png);
 }
  @media (max-width: 515px){
@@ -408,7 +412,7 @@ transform: scale(1.2);
 .fon{
      width: 100%;
     height: 450px;
-    background: url(../img/fon.png);
+    background: url(../img/Screenshot_1.png);
 }
    @media (max-width: 990px){
        .fon{
@@ -425,16 +429,16 @@ transform: scale(1.2);
 
 .fon-1{
     height: 930px;
-     background: #dee1e4;
+     background: url(../img/wallpaperflare.com_wallpaper.jpg);
 }
 .fon-2{
     height: 500px;
-     background: #17968b;
+     background: url(../img/wallpaperflare.jpg);
 }
 
 .fon-3{
      height: 400px;
-    background: url(../img/close-up-of-businessman-looking-at-his-modern-wristwatch.png);
+    background: url(../img/%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0.png);
 }
 
 @media (max-width: 574px){
@@ -445,15 +449,11 @@ transform: scale(1.2);
 
 .fon-4{
     height: 500px;
-     background: #040230;
+     background: url(../img/wallp.jpg);
 }
 .fon-5{
-     height: 600px;
-     background: url(../img/Screenshot_2.jpg) ;
-}
-.fon-6{
-     height: 175px;
-     background: #76787e;
+     height: 800px;
+     background: url(../img/contact.jpg) ;
 }
 
 

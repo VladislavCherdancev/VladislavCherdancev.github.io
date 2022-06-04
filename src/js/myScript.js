@@ -1,40 +1,7 @@
-/*"use strict"
+"use strict"
 
-  function calc(){
+ 
 
-  var  siteType , design , adaptability, sum = 0;
-      
-   siteType = prompt( "Тип сайта.  1.коммерческий, 2.информационный, 3.социальный");
-                       
-   design = prompt( "Дизай. 1.классический, 2.минимализм, 3.рисованный");
-
-   adaptability = prompt( "Адаптивность. 1.только ПК, 2.только мобильные телефоны, 3.ПК и мобильные телефоны");
-   
-     if (siteType == "1") {sum = sum + 1000};
-      
-     if (siteType == "2") {sum = sum + 1500};
-      
-     if (siteType == "3") {sum = sum + 2000};
-     
-      
-     if (design == "1") {sum = sum + 500};
-      
-     if (design == "2") {sum = sum + 700};
-      
-     if (design == "3") {sum = sum + 900};
-      
-      
-     if (adaptability == "1") {sum = sum + 100};
-      
-     if (adaptability == "2") {sum = sum + 150};
-      
-     if (adaptability == "3") {sum = sum + 200};
-      
-      alert(sum);
-      
-  }
-     
-  calc();*/
 
 $(document). ready(function(){
     
@@ -148,7 +115,43 @@ anim();
     
     
     
-    
+   function calc(){
+
+  var  siteType , design , adaptability, sum = 0;
+      
+   siteType = onchange( "Тип сайта.  1.коммерческий, 2.информационный, 3.социальный");
+                       
+   design = onchange( "Дизай. 1.классический, 2.минимализм, 3.рисованный, 4.Organic Natural");
+
+   adaptability = onchange( "Адаптивность. 1.только ПК, 2.только мобильные телефоны, 3.ПК и мобильные телефоны");
+   
+     if (siteType == "1") {sum = sum + 1000};
+      
+     if (siteType == "2") {sum = sum + 1500};
+      
+     if (siteType == "3") {sum = sum + 2000};
+     
+      
+     if (design == "1") {sum = sum + 500};
+      
+     if (design == "2") {sum = sum + 700};
+      
+     if (design == "3") {sum = sum + 900};
+      
+     if (design == "4") {sum = sum + 1200};
+      
+      
+     if (adaptability == "1") {sum = sum + 100};
+      
+     if (adaptability == "2") {sum = sum + 150};
+      
+     if (adaptability == "3") {sum = sum + 200};
+      
+      alert(sum);
+      
+  }
+     
+  calc();  
     
     
     
