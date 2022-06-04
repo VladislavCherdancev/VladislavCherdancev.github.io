@@ -1,5 +1,5 @@
-"use strict"
 
+"use strict"
  
 
 
@@ -106,32 +106,41 @@ function anim(){
 anim();
     
  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-   function calc(){
 
-  var  siteType , design , adaptability, sum = 0;
-      
-   siteType = onchange( "Тип сайта.  1.коммерческий, 2.информационный, 3.социальный");
+
+
+
+
+
+
+
+
+
+
+
+
+
+function calc (){
+ 
+   /* siteType = #select1 ( "Тип сайта.  1.коммерческий, 2.информационный, 3.социальный");
                        
-   design = onchange( "Дизай. 1.классический, 2.минимализм, 3.рисованный, 4.Organic Natural");
+   design = #select2 ( "Дизай. 1.классический, 2.минимализм, 3.рисованный, 4.Organic Natural");
 
-   adaptability = onchange( "Адаптивность. 1.только ПК, 2.только мобильные телефоны, 3.ПК и мобильные телефоны");
+   adaptability = #select3 ( "Адаптивность. 1.только ПК, 2.только мобильные телефоны, 3.ПК и мобильные телефоны");*/
+
+     $('#select1[name=siteType]').on("change", function(){
+siteType = $(this).val( 1,2,3 ); 
+
+    if (siteType == "1") {sum = sum + 1000};
+      
+    if (siteType == "2") {sum = sum + 1500};
+      
+    if (siteType == "3") {sum = sum + 2000};
+   }); 
    
-     if (siteType == "1") {sum = sum + 1000};
-      
-     if (siteType == "2") {sum = sum + 1500};
-      
-     if (siteType == "3") {sum = sum + 2000};
-     
-      
+     $('#select2[name=design]').on("change", function(){
+design = $(this).val(sum ); 
+
      if (design == "1") {sum = sum + 500};
       
      if (design == "2") {sum = sum + 700};
@@ -139,21 +148,29 @@ anim();
      if (design == "3") {sum = sum + 900};
       
      if (design == "4") {sum = sum + 1200};
-      
-      
+   });  
+
+    $('#select3[name=adaptability]').on("change", function(){
+adaptability = $(this).val(sum ); 
+       
      if (adaptability == "1") {sum = sum + 100};
       
      if (adaptability == "2") {sum = sum + 150};
       
      if (adaptability == "3") {sum = sum + 200};
       
-      alert(sum);
-      
-  }
-     
-  calc();  
-    
-    
+   });  
+
+     $('#js-button').click(function(){
+	var value = $('#select1, #select2, #select3').val();
+	$('#js-result').html('Результат: ' + value);
+});
+  
+   };  
+calc();
+         
+   
+   
     
     
     

@@ -106,7 +106,23 @@
                 <div class="invalid-feedback"></div>
               </div>
             </div>
+            
+            
+            
             <div class="col-sm-6">
+              <!-- Номер пользователя -->
+              <div class="form-group">
+                <label for="name" class="control-label">номер</label>
+                <input id="name" type="text" name="name" class="form-control" value="" placeholder="номер" minlength="2" maxlength="30" required="required">
+                <div class="invalid-feedback"></div>
+              </div>
+            </div>
+            
+            
+            
+            
+            
+            <div class="col-sm-12">
               <!-- Email пользователя -->
               <div class="form-group">
                 <label for="email" class="control-label">Email-адрес</label>
@@ -380,7 +396,7 @@
  
              <h1 class=" text-white fw-bold mt-5">Тип сайта</h1>
              
- <select class="form-control" class="siteType" id="myselect">
+ <select class="form-control" class="siteType" id="select1" name="siteType">
  <option value="0" selected>Выберите пункт...</option>
  <option value="1">Коммерческий</option>
  <option value="2">Информационный</option>
@@ -389,7 +405,7 @@
  
              <h1 class=" text-white fw-bold mt-5">Дизайн</h1>
   
- <select class="form-control" class="design" id="myselect">
+ <select class="form-control" class="design" id="select2" name="design">
  <option value="0">Выберите пункт...</option>
  <option value="1">Классический</option>
  <option value="2">Минимализм</option>
@@ -399,17 +415,45 @@
  
              <h1 class=" text-white fw-bold mt-5">Адаптивность</h1>
        
- <select class="form-control" class="adaptability" id="myselect">
+ <select class="form-control" class="adaptability" id="select3" name="adaptability">
  <option value="0">Выберите пункт...</option>
  <option value="1">Только ПК</option>
  <option value="2">Только мобильные телефоны</option>
  <option value="2">ПК и Мобильные телефоны</option>
    </select>
        </div>
-         </div>
-            </div>
+         
+            
+            <div>
+             <div class="col-sm text-center">
+		<button id="js-button" class="btn btn-outline-primary mt-5 pt-5">Узнать примерную стоимость</button>
+	</div>
+             <div class="col-12 text-white text-center fw-bold" id="js-result">
+	   	Результат: 
+	</div>
+             </div>
+             </div>
+             </div>
               </section>
                
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
                                     <section class="block"></section> 
                                                     
                                    <section class="fon-3" id="work">
