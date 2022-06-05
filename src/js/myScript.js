@@ -1,12 +1,56 @@
 
-"use strict"
 
-/*таймер на модальное окно*/ 
+
+/*таймер на модальное окно */
 setTimeout(function(){ 
     $("#modalopen").click();
 }, 10000);
 
 
+  
+/* CanvasEffect*/
+var w = canvaseffect.width = window.innerWidth,
+ h = canvaseffect.height = window.innerHeight,
+ ctx = canvaseffect.getContext('2d'),
+ 
+ total = w,
+ accelleration = .05,
+ 
+ size = w/total,
+ occupation = w/total,
+ repaintColor = 'rgba(0, 0, 0, .04)'
+ colors = [],
+ dots = [],
+ dotsVel = [];
+
+var portion = 360/total;
+for(var i = 0; i < total; ++i){
+ colors[i] = portion * i;
+ 
+ dots[i] = h;
+ dotsVel[i] = 10;
+}
+
+function anim(){
+ window.requestAnimationFrame(anim);
+ 
+ ctx.fillStyle = repaintColor;
+ ctx.fillRect(0, 0, w, h);
+ 
+ for(var i = 0; i < total; ++i){
+ var currentY = dots[i] - 1;
+ dots[i] += dotsVel[i] += accelleration;
+ 
+ ctx.fillStyle = 'hsl('+ colors[i] + ', 80%, 50%)';
+ ctx.fillRect(occupation * i, currentY, size, dotsVel[i] + 1);
+ 
+ if(dots[i] > h && Math.random() < .01){
+ dots[i] = dotsVel[i] = 0;
+ }
+ }
+}
+anim();
+    
 
 /*Плавный скролл*/ 
 $(document). ready(function(){
@@ -64,56 +108,13 @@ $('a[href^="#"]').click (function(){
     $('html,body'). animate({scrollTop: $(valHref). offset().top - 60 + "px"});
 });
     
-  
- /*CanvasEffect
-var w = canvaseffect.width = window.innerWidth,
- h = canvaseffect.height = window.innerHeight,
- ctx = canvaseffect.getContext('2d'),
- 
- total = w,
- accelleration = .05,
- 
- size = w/total,
- occupation = w/total,
- repaintColor = 'rgba(0, 0, 0, .04)'
- colors = [],
- dots = [],
- dotsVel = [];
 
-var portion = 360/total;
-for(var i = 0; i < total; ++i){
- colors[i] = portion * i;
- 
- dots[i] = h;
- dotsVel[i] = 10;
-}
-
-function anim(){
- window.requestAnimationFrame(anim);
- 
- ctx.fillStyle = repaintColor;
- ctx.fillRect(0, 0, w, h);
- 
- for(var i = 0; i < total; ++i){
- var currentY = dots[i] - 1;
- dots[i] += dotsVel[i] += accelleration;
- 
- ctx.fillStyle = 'hsl('+ colors[i] + ', 80%, 50%)';
- ctx.fillRect(occupation * i, currentY, size, dotsVel[i] + 1);
- 
- if(dots[i] > h && Math.random() < .01){
- dots[i] = dotsVel[i] = 0;
- }
- }
-}
-anim();*/
-    
   /*Калькулятор*/  
 function calculate(){
     let sum = parseInt($("#SelectSiteType option:selected").val()) + parseInt($("#SelectDesign option:selected").val()) + parseInt($("#SelectAdaptability   option:selected").val());
     let days = parseInt($("#SelectSiteType option:selected").attr("days")) + parseInt($("#SelectDesign option:selected").attr("days")) + parseInt($("#SelectAdaptability option:selected").attr("days"));
-    $(".price .digit").text(sum);
-    $(".days .digit1").text(days);
+    $(" .digit").text(sum);
+    $(" .digit1").text(days);
 };
 calculate();
 $("select").on("change", function(){
@@ -126,11 +127,6 @@ $("select").on("change", function(){
    
    /**/ 
  
-
-
-
-
-
 
 
 
