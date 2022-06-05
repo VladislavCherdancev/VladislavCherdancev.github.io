@@ -1,8 +1,14 @@
 
 "use strict"
- 
+
+/*таймер на модальное окно*/ 
+setTimeout(function(){ 
+    $("#modalopen").click();
+}, 10000);
 
 
+
+/*Плавный скролл*/ 
 $(document). ready(function(){
     
  $(window).scroll(() => {
@@ -27,9 +33,6 @@ $(document). ready(function(){
     elements.each((i, el) => {
     observer.observe(el);    
     });
-      
-
-
 });
 
 function onEntry (entry){
@@ -55,7 +58,7 @@ $(document).ready(function(){
 
 
 
-
+ /*Отступ при скролинге якорных ссылок*/  
 $('a[href^="#"]').click (function(){
     let valHref = $(this). attr ("href");
     $('html,body'). animate({scrollTop: $(valHref). offset().top - 60 + "px"});
@@ -105,76 +108,39 @@ function anim(){
 }
 anim();
     
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function calc (){
- 
-   /* siteType = #select1 ( "Тип сайта.  1.коммерческий, 2.информационный, 3.социальный");
-                       
-   design = #select2 ( "Дизай. 1.классический, 2.минимализм, 3.рисованный, 4.Organic Natural");
-
-   adaptability = #select3 ( "Адаптивность. 1.только ПК, 2.только мобильные телефоны, 3.ПК и мобильные телефоны");*/
-
-     $('#select1[name=siteType]').on("change", function(){
-siteType = $(this).val( 1,2,3 ); 
-
-    if (siteType == "1") {sum = sum + 1000};
-      
-    if (siteType == "2") {sum = sum + 1500};
-      
-    if (siteType == "3") {sum = sum + 2000};
-   }); 
-   
-     $('#select2[name=design]').on("change", function(){
-design = $(this).val(sum ); 
-
-     if (design == "1") {sum = sum + 500};
-      
-     if (design == "2") {sum = sum + 700};
-      
-     if (design == "3") {sum = sum + 900};
-      
-     if (design == "4") {sum = sum + 1200};
-   });  
-
-    $('#select3[name=adaptability]').on("change", function(){
-adaptability = $(this).val(sum ); 
-       
-     if (adaptability == "1") {sum = sum + 100};
-      
-     if (adaptability == "2") {sum = sum + 150};
-      
-     if (adaptability == "3") {sum = sum + 200};
-      
-   });  
-
-     $('#js-button').click(function(){
-	var value = $('#select1, #select2, #select3').val();
-	$('#js-result').html('Результат: ' + value);
+  /*Калькулятор*/  
+function calculate(){
+    let sum = parseInt($("#selectSiteType option:selected").val()) + parseInt($("#selectDesign option:selected").val()) + parseInt($("#selectAdaptability   option:selected").val());
+    let days = parseInt($("#selectSiteType option:selected").attr("days")) + parseInt($("#selectDesign option:selected").attr("days")) + parseInt($("#selectAdaptability option:selected").attr("days"));
+    $(".price .digit").text(sum);
+    $(".days .digit").text(days);
+};
+calculate();
+$("select").on("change", function(){
+    calculate();
 });
-  
-   };  
-calc();
+
+ 
          
    
    
-    
-    
-    
-    
-    
-    
-    
+   /**/ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

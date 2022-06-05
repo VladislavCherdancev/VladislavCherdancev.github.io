@@ -36,7 +36,7 @@ nav{
     animation: topmenu 0.5s ease forwards;
     opacity: 0;
 }
-.main{    
+.main{   
    background: url(../img/IMG_0144.png) 100% 100%/auto 100%  no-repeat;
    
 }
@@ -452,7 +452,7 @@ transform: scale(1.2);
      background: url(../img/wallp.jpg);
 }
 .fon-5{
-     height: 800px;
+     height: 915px;
      background: url(../img/contact.jpg) ;
 }
 
@@ -637,17 +637,6 @@ background: linear-gradient(to right, #6f0000, #200122);
 </style>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+/*button*/
 
 
