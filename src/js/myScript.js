@@ -65,7 +65,7 @@ $('a[href^="#"]').click (function(){
 });
     
   
- /*CanvasEffect*/
+ /*CanvasEffect
 var w = canvaseffect.width = window.innerWidth,
  h = canvaseffect.height = window.innerHeight,
  ctx = canvaseffect.getContext('2d'),
@@ -106,14 +106,14 @@ function anim(){
  }
  }
 }
-anim();
+anim();*/
     
   /*Калькулятор*/  
 function calculate(){
-    let sum = parseInt($("#selectSiteType option:selected").val()) + parseInt($("#selectDesign option:selected").val()) + parseInt($("#selectAdaptability   option:selected").val());
-    let days = parseInt($("#selectSiteType option:selected").attr("days")) + parseInt($("#selectDesign option:selected").attr("days")) + parseInt($("#selectAdaptability option:selected").attr("days"));
+    let sum = parseInt($("#SelectSiteType option:selected").val()) + parseInt($("#SelectDesign option:selected").val()) + parseInt($("#SelectAdaptability   option:selected").val());
+    let days = parseInt($("#SelectSiteType option:selected").attr("days")) + parseInt($("#SelectDesign option:selected").attr("days")) + parseInt($("#SelectAdaptability option:selected").attr("days"));
     $(".price .digit").text(sum);
-    $(".days .digit").text(days);
+    $(".days .digit1").text(days);
 };
 calculate();
 $("select").on("change", function(){
