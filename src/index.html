@@ -109,7 +109,7 @@
               <!-- Номер пользователя -->
               <div class="form-group">
                 <label for="name" class="control-label">номер</label>
-                <input id="name" type="text" name="name" class="form-control" value="" placeholder="номер" minlength="2" maxlength="30" required="required">
+                <input id="inputTel" type="phone" name="name" class="form-control" value="" placeholder="номер" minlength="2" maxlength="30" required="required">
                 <div class="invalid-feedback"></div>
               </div>
             </div>
@@ -578,19 +578,19 @@
   
 <div class="form-group">
    <label class="text-white fw-bold" for="name">Ваше имя:</label>
-   <input type="name" name="name" class="form-control" id="name" placeholder="Имя">
+   <input type="name" name="name" class="form-control" id="inputname" placeholder="Имя">
 </div>
 
 
 <div class="form-group">
    <label class="text-white fw-bold" for="email1">E-mail:</label>
-   <input type="email" name="email" class="form-control" id="email1" placeholder="Email">
+   <input type="email" name="email" class="form-control" id="inputemail1" placeholder="Email">
 </div>
 
 
 <div class="form-group">
    <label class="text-white fw-bold" for="phone">Номер телефона:</label>
-   <input type="phone" name="phone" class="form-control" id="phone" placeholder="телефон">
+   <input type="phone" name="phone" class="form-control" id="inputTel" placeholder="телефон">
 </div>
 
 <div class="form-group">
@@ -621,7 +621,7 @@
         </div>
     </div>
 </section>  
-   
+<script src="js/MasketInput.min.js"></script>   
 <script src="js/jquery-3.6.0.min.js"></script>                      
 <script src="js/myScript.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>

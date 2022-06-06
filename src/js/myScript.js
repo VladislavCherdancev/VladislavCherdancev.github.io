@@ -1,12 +1,17 @@
-
-
+ 
 
 /*таймер на модальное окно */
 setTimeout(function(){ 
     $("#modalopen").click();
 }, 10000);
 
+ /*Маска на мои контакты*/ 
 
+$(document).ready(function(){
+    
+ $("#inputTel").mask("+7(999) 999-9999");
+   
+});
   
 /* CanvasEffect*/
 var w = canvaseffect.width = window.innerWidth,
@@ -125,11 +130,7 @@ $("select").on("change", function(){
          
    
    
-   /**/ 
- 
-
-
-
+  
 
 
 
