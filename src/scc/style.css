@@ -7,7 +7,7 @@ nav{
     height: 60px;
     background: #040230;
     position: fixed;
-    z-index: 100;
+    z-index: 20;
 }
 .logo{
     color: white;
