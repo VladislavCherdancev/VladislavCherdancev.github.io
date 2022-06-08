@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Это моя первая страница...">
+    <meta name="author" content="Vladislav">
+    <meta name="robots" content="all">
+    <meta property="og:titlle" content="Это моя первая страница">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="scc/style.css">
+    <link rel="stylesheet" href="scc/reset.css">
+    <link rel="stylesheet" href="scc/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <title>Черданцев Владислав - разработчик сайтов</title>
+</head>
+<body>
+<header>
+    <nav>
+      <div class="container">
+          <div class="row">
+           <div class="col-xxl-3 col-lg-3 col-7"><div class="logo">Черданцев Владислав</div> 
+        </div>
+        <div class="col-xxl-6 offset-xxl-2 col-xl-6 col-lg-6  offset-xl-3 offset-md-1 d-none d-lg-block"><div class="menu">
+       <ul>
+           <li><a href="#me">Обо мне</a></li>
+           <li><a href="#services">Услуги</a></li>
+           <li><a href="#cases">Кейсы</a></li>
+           <li><a href="#price">Прайс</a></li>
+           <li><a href="#reviews">Отзывы</a></li>
+           <li><a href="#contacts">Контакты</a></li>
+       </ul>
+ </div>
+         </div>
+          <div class="col-3  d-flex d-lg-none flex-column justify-content-center align-items-end ">
+            <div class="dropdown">
+  <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Меню</a>
+  
+ <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+   
+           <li><a class="dropdown-item" href="#me" >Обо мне</a></li>
+           <li><a class="dropdown-item" href="#services">Услуги</a></li>
+           <li><a class="dropdown-item" href="#cases">Кейсы</a></li>    
+           <li><a class="dropdown-item" href="#price">Прайс</a></li>
+           <li><a class="dropdown-item" href="#reviews">Отзывы</a></li>
+           <li><a class="dropdown-item" href="#contacts">Контакты</a></li>
+ </ul>
+                        </div>
+                   </div>
+               </div>
+           </div>
+           
+       </nav>
+ </header>
+<canvas id="canvaseffect" ></canvas>
+ <section class="main" >
+                         
+ 
+
+ <div class="container h-100">
+           <div class="row align-items-center h-100">
+                       <div class="col-lg-6">
+                    
+        <div class="title__containe">
+          <h1 class="canva">Привет <br> Я Черданцев Владислав </h1>
+              <h4 class="canva">Веб-разработчик</h4>
+       <a href="#me">   <input type="button" value="Обо мне" class="canva"></a>
+      <a href="#work"> <input type="button" value="Мои работы" class="canva"></a>
+      <div class="container">
+          <div class="row mt-5 pt-5">
+              <div class="col-12">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#feedbackFormModal" id="modalopen">Заказать обратный звонок</button> 
+            </div>
+          </div>
+      </div>
+        </div>
+     </div>
+   </div>
+</div>
+ </section>
+ 
+     <!-- Форма обратной связи в модальном окне -->
+<div class="modal" id="feedbackFormModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Форма обратной связи</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Форма обратной связи -->
+        <form id="feedbackForm" action="/feedback/process/process.php" enctype="multipart/form-data" novalidate>
+          <div class="form-row">
+            <div class="col-sm-6">
+              <!-- Имя пользователя -->
+              <div class="form-group">
+                <label for="name" class="control-label">Имя</label>
+                <input id="name" type="text" name="name" class="form-control" value="" placeholder="Имя" minlength="2" maxlength="30" required="required">
+                <div class="invalid-feedback"></div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <!-- Номер пользователя -->
+              <div class="form-group">
+                <label for="name" class="control-label">номер</label>
+                <input id="inputTel" type="phone" name="name" required class="form-control" value="" placeholder="номер" minlength="2" maxlength="30" required="required">
+                <div class="invalid-feedback"></div>
+              </div>
+            </div>
+
+            <div class="col-sm-12">
+              <!-- Email пользователя -->
+              <div class="form-group">
+                <label for="email" class="control-label">Email-адрес</label>
+                <input id="email" type="email" name="email" required="required" class="form-control" value="" placeholder="Email-адрес">
+                <div class="invalid-feedback"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Сообщение пользователя -->
+          <div class="form-group">
+            <label for="message" class="control-label">Сообщение (не менее 20 символов)</label>
+            <textarea id="message" name="message" class="form-control" rows="3" placeholder="Сообщение (не менее 20 символов)" minlength="20" maxlength="500" required="required"></textarea>
+            <div class="invalid-feedback"></div>
+          </div>
+          <!-- Изображения -->
+          <div class="form-group attachments">
+            <div>При необходимости прикрепите к сообщению изображения (до <span class="countFiles"></span>):
+            </div>
+            <div class="mb-1 text-muted">
+              <small>максимальный размер одного изобржения 512 Кбайт</small>
+            </div>
+            <div class="alert alert-warning d-none mb1"><small class="attachments-error"></small></div>
+              <div class="custom-file">
+                <input type="file" name="attachment[]" class="custom-file-input" id="customFile1">
+                <label class="custom-file-label" for="customFile1">Выбреите файл...</label>
+                <div class="invalid-feedback"></div>
+              </div>
+          </div>
+          <!-- Капча -->
+          <div class="form-group captcha">
+            <img class="img-captcha" src="/feedback/captcha/captcha.php" data-src="/feedback/captcha/captcha.php">
+            <div class="btn btn-light refresh-captcha">Обновить</div>
+            <div class="form-group">
+              <label for="captcha" class="control-label">Код, показанный на изображении</label>
+              <input type="text" name="captcha" maxlength="6" required="required" id="captcha" class="form-control captcha" placeholder="******" autocomplete="off" value="">
+              <div class="invalid-feedback"></div>
+            </div>
+          </div>
+          <!-- Пользовательское солашение -->
+          <div class="form-group">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" name="agree" class="custom-control-input" id="customCheck">
+              <label class="custom-control-label" for="customCheck">Нажимая кнопку, я принимаю условия <a href="#">Пользовательского соглашения</a> и даю своё согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных».</label>
+            </div>
+          </div>
+          <!-- Сообщение -->
+          <div class="alert alert-danger form-error d-none">
+            Произошли ошибки! Исправьте их и отправьте форму ещё раз.
+          </div>
+          <!-- Индикация загрузки данных формы на сервер -->
+          <div class="progress mb-2 d-none">
+            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0">
+              <span class="sr-only">0%</span>
+            </div>
+          </div>
+          <!-- Кнопка для отправки формы -->
+          <button type="submit" class="btn btn-primary float-right" >Отправить сообщение</button>
+        </form>
+                
+        <!-- Сообщение об успешной отправки формы -->
+        
+        <div class="alert alert-success form-success mb-0 d-none">Форма успешно отправлена. Нажмите на <a class="form-success-link" href="#">ссылку</a>, чтобы отправить ещё одно сообщение.</div>
+      </div>
+    </div>
+  </div>
+</div>
+	      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   <section class="block"></section>    
+ 
+ <section class="fon-0" id="me">
+ <div class="container">
+     <div class="row text-center ">
+          <div class="col-12">
+               <h1 class="animation p-3  text-white  fw-bold  text-center"  >Обо мне</h1>
+          </div> 
+     </div>
+          <div class="row">
+                <div class="col-12">
+              <img src="img/imgonline-com-ua-Resize-mKWvrQrHsXWX7.jpg" class="rounded mx-auto d-block rounded-circle mt-4" class="radius"alt="...">
+          </div>
+     </div>
+      
+     <div class="row">
+        <div class="col-12  mt-4 p-3  text-white text-center fw-bold">
+            <p>Привет моё имя Владислав.<br> Мне 29 лет. Интересуюсь разработкой web сайтов. Для меня программирование это не просто трудовой процесс, но ещё творчество и увлечение.<br>Я знаю, что красота в глазах смотрящего, поэтому я, как частный вебмастер по созданию сайтов, работаю с вами, чтобы создать продукт, который будет одновременно полностью функциональным и визуально привлекательным, как для вас, так и для вашей целевой аудитории.
+        </div>
+        <div class="col-12  mt-2 p-3 text-white text-center fw-bold">
+            <p>О себе: <br> Трудолюбив, и полон энергии для реализации самых разных пожеланий в сфере веб-разработки.<br> Высокая степень ответственности за реализацию каждого проекта.</p>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-12  mt-4 text-center">
+             <a class="btn btn-primary" href="https://t.me/Vladislav_cherdancev93" role="button">Связь с автором</a>
+          </div>
+      </div>
+    </div>
+ </section>
+                                                           <section class="block"></section>    
+                                   <section class="fon" id="services"> 
+                            <div class="container">
+                     <div class="row mt-5">	
+                <div class="col-12  text-center">		
+           <h2 class="text-white  mt-3 fw-bold" >Что я умею</h2>
+</div>
+    </div>
+         </div>
+         
+<div class="container">
+
+                  <div class="row justify-content-center text-center  mt-5 pt-5">
+ <div class="col-sm-6  col-md-3 fs-3">
+        <p class="text-white fa-solid fa-desktop"></p>
+        <p class="fw-bold text-white">Веб дизайн:</p>
+        <p class="fw-bold text-white">планирование и создание контента таким образом, чтобы сайт был красивым, функциональным и удобным. </p>
+        </div>
+ <div class="col-sm-6 col-md-3 fs-3">  
+        <p class="text-white fa-solid fa-code"></p>
+        <p class="fw-bold text-white">Разработка:</p>
+        <p class="fw-bold text-white">Сайт должен быть:<br>Детально проработанным.<br>Точным.<br>Понятным.<br></p>
+        </div>
+ <div class="col-sm-6 col-md-3 fs-3">
+       <p class="text-white fa-solid fa-rocket"></p>
+       <p class="fw-bold text-white">СЕО-оптимиизация:</p>
+        <p class="fw-bold text-white ">Если сайт хорошо оптимизирован и поисковые системы считают его полезным, он отобразится на первых страницах поисковика по ключевым запросам.</p>
+        </div>
+ <div class="col-sm-6 col-md-3 fs-3"> 
+        <p class="text-white fa-solid fa-volume-high"></p>
+        <p class="fw-bold text-white">Маркетинг:</p>
+        <p class="fw-bold text-white"> Маркетинг – это управление удовлетворением, это кино, где товар в главной роли. Маркетинг – это случай процесса, постоянный, непрерывный. </p>
+        </div>
+    </div>  
+        </div>        
+            </section>
+            <section class="block"></section>          
+ <section class="fon-1" id="cases">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+              <div class="col-12">
+                   <h1 class=" fw-bold text-white mt-5">Кейсы</h1>
+        <p class="fs-2 mt-5 text-white fw-bold">Оцените мои работы, для принятия решения!</p>
+                     </div>
+                 </div>
+             </div> 
+               
+    <div class="contanier"> 
+               <div class="row justify-content-center text-center w-100">
+                  <div class="col-10">
+                      <div id="thumbnail-preview-indicators" class="carousel slide" data-ride="carousel">
+ <!-- Indicators -->
+ <ol class="carousel-indicators">
+ <li data-target="#thumbnail-preview-indicators" data-slide-to="0" class="active">
+ <div class="thumbnail">
+ <img class="img-responsive" src="https://bootstraptema.ru/snippets/slider/2017/thumbslider/thumbslider-1.jpg">
+ </div>
+ </li>
+ <li data-target="#thumbnail-preview-indicators" data-slide-to="1">
+ <div class="thumbnail">
+ <img class="img-responsive" src="https://bootstraptema.ru/snippets/slider/2017/thumbslider/thumbslider-2.jpg">
+ </div>
+ </li>
+ <li data-target="#thumbnail-preview-indicators" data-slide-to="2">
+ <div class="thumbnail">
+ <img class="img-responsive" src="https://bootstraptema.ru/snippets/slider/2017/thumbslider/thumbslider-3.jpg">
+ </div>
+ </li>
+ </ol>
+ <div class="carousel-inner">
+ <div class="item slides active">
+ <div class="slide-1"></div>
+ <div class="container">
+ <div class="carousel-caption">
+ <h1>Thumb indicator carousel</h1>
+ <p>Responsive thumbnail preview in carousel indicators</p>
+ <p class="lead"><a class="btn btn-lg btn-link" href="#" role="button">THUMBSLIDER</a></p>
+ </div>
+ </div>
+ </div>
+ <div class="item slides">
+ <div class="slide-2"></div>
+ <div class="container">
+ <div class="carousel-caption">
+ <h1>Another example headline one</h1>
+ <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam</p>
+ <p><a class="btn btn-lg btn-link" href="#" role="button">THUMBSLIDER</a></p>
+ </div>
+ </div>
+ </div>
+ <div class="item slides">
+ <div class="slide-3"></div>
+ <div class="container">
+ <div class="carousel-caption">
+ <h1>One more for good measure.</h1>
+ <p>Nullam id dolor id nibh ultricies vehicula ut id elit</p>
+ <p><a class="btn btn-lg btn-link" href="#" role="button">THUMBSLIDER</a></p>
+ </div>
+ </div>
+ </div>
+ </div>
+ <a class="left carousel-control" href="#thumbnail-preview-indicators" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+ <a class="right carousel-control" href="#thumbnail-preview-indicators" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+ </div>
+     </div>
+         </div>         
+             </div>
+              
+    <div class="container">
+        <div class="row  justify-content-center">
+             <div class="col-2 offset-sm-2">
+                  <h1 class="text-white fw-bold" >Lorem</h1>
+                      <p class="text-white fw-bold">ipsum dolar.</p>
+                      <h1 class="text-white fw-bold">Lorem </h1>
+                    <p class="text-white fw-bold">ipsum dolar.</p>
+                 </div>
+              <div class="col-6 offset-lg-1 offset-sm-1 offset-2 mt-4 pt-4">
+         <p class="text-white fw-bold fs-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ut non esse expedita illum,<br> maxime voluptatum dolorem quo, quis voluptate at voluptas excepturi <br>hic molestiae cumque quae amet facilis impedit.</p>
+      </div>
+    </div>
+ </div>   
+    
+ <div class="container">
+    <div class="row">
+        <div class="col-12 mt-5 text-center">
+            <a class="btn btn-primary" href="https://t.me/Vladislav_cherdancev93" role="button">Перейти на сайт</a>
+        </div>
+    </div>
+</div>
+     </section>
+          <section class="block"></section>    
+              <section class="fon-2" id="price">
+                  <div class="container">
+                      <div class="row text-center">
+                          <div class="col-12">
+                              <h1 class=" text-white fw-bold mt-5">Расчет стоимости</h1>
+                          </div>
+                      </div>
+                  </div>
+                
+<div class="container">
+<div class="row">
+<div class="col-md-6 offset-md-3 mb-1 mt-3">
+ 
+             <h1 class=" text-white fw-bold mt-5">Тип сайта</h1>
+             
+ <select class="form-control" class="siteType" id="SelectSiteType" name="siteType">
+ <option value="0" days="0" selected>Выберите пункт...</option>
+ <option value="5000" days="2">Коммерческий</option>
+ <option value="7000" days="3">Информационный</option>
+ <option value="9000" days="4">Социальный</option>
+ </select>
+ 
+             <h1 class=" text-white fw-bold mt-5">Дизайн</h1>
+  
+ <select class="form-control" class="design" id="SelectDesign" name="design">
+ <option value="0" days="0">Выберите пункт...</option>
+ <option value="5000" days="2">Классический</option>
+ <option value="6000" days="4">Минимализм</option>
+ <option value="7000" days="6">Рисованный</option>
+ <option value="8000" days="8">Organic Natural</option>
+ </select>
+ 
+             <h1 class=" text-white fw-bold mt-5">Адаптивность</h1>
+       
+ <select class="form-control" class="adaptability" id="SelectAdaptability" name="adaptability">
+ <option value="0" days="0">Выберите пункт...</option>
+ <option value="5000" days="2">Только ПК</option>
+ <option value="7000" days="4">Только мобильные телефоны</option>
+ <option value="9000" days="6">ПК и Мобильные телефоны</option>
+   </select>
+      <div class="container text-center">
+          <div class="row d-flex mt-5">
+              <div class="col-4">
+                                                   
+                     <ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center">Стоимость:
+    <span class="badge bg-primary rounded-pill digit"></span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">Сроки:
+    <span class="badge bg-primary rounded-pill digit1"></span>
+  </li>
+  </ul>                       
+    </div>
+         </div>
+             </div>
+                 </div>
+                     </div>
+                         </div>
+                             </section>
+        
+                                    <section class="block"></section> 
+                                                    
+                                   <section class="fon-3" id="work">
+                            <div class="container">
+                 <div class="row text-center mt-3">
+            <div class="col-12">
+                 <h1 class="text-white fw-bold mt-5">Немного статистики</h1>
+            </div>
+        </div>
+     </div>
+     <div class="container">
+
+                  <div class="row justify-content-center text-center  mt-3 ">
+ <div class="col-sm-6 col-md-3 fs-1  mt-4 pt-3">
+        <p class="text-white fw-bold fa-regular fa-face-smile"></p>
+        <p class="text-white fw-bold statistics-1">120</p>
+        <p class="text-white  statistics-1" >Счастливых клиентов</p>
+        </div>
+ <div class="col-sm-6 col-md-3 fs-1 mt-4 pt-3">  
+        <p class="text-white fw-bold fa-solid fa-code"></p>
+        <p class="text-white fw-bold statistics-1">4600</p>
+        <p class="text-white statistics-1">Часов работы</p>
+        </div>
+ <div class="col-sm-6 col-md-3 fs-1 mt-4 pt-3">
+       <p class="text-white fw-bold fa-solid fa-check-double"></p>
+       <p class="text-white fw-bold statistics-1">340</p>
+        <p class="text-white  statistics-1">Проектов завершено</p>
+        </div>
+ <div class="col-sm-6 col-md-3 fs-1 mt-4 pt-3"> 
+        <p  class="text-white fw-bold fa-solid fa-trophy"></p>
+        <p class="text-white fw-bold statistics-1">23</p>
+        <p class="text-white  statistics-1">Наград получено</p>
+        </div>
+                                   </div>  
+                                       </div>        
+                                          </section>  
+                                            <section class="block"></section>    
+                                          
+                                          
+      <section class="fon-4" id="reviews">                                  
+                              <div class="container">
+                 <div class="row text-center mt-3">
+            <div class="col-12">
+                 <h1 class=" text-white fw-bold">»»»Отзывы«««</h1>
+            </div>
+        </div>
+     </div>       
+    
+       <div class="container">
+ <div class="row mt-5">
+
+ <div class="col-md-4 col-sm-6">
+ <div class="box">
+ <img src="img/pexels-andrea-piacquadio-789822.jpg" alt="">
+ <div class="box-content">
+ <h3 class="title">Александра</h3>
+ <p class="description">Очень благодарна Черданцеву владиславу за создание сайта для нашей компании!
+Проект был сдан вовремя, работа выполнена качественно и "с душой".
+В процессе работы было полное понимание!</p>
+ </div>
+ </div>
+ </div>
+
+ <div class="col-md-4 col-sm-6">
+ <div class="box">
+ <img src="img/pexels-edmond-dant%C3%A8s-4339914.jpg" alt="">
+ <div class="box-content">
+ <h3 class="title">Рамиль</h3>
+ <p class="description">Доволен сайтом! Рекомендую Черданцева Владислава, как хорошего специалиста в области веб-разработки.</p>
+ </div>
+ </div>
+ </div>
+
+ <div class="col-md-4 col-sm-6">
+ <div class="box">
+ <img src="img/pexels-fauxels-3184357.jpg" alt="">
+ <div class="box-content">
+ <h3 class="title">OAO "Альянс"</h3>
+ <p class="description">Наша компания работала с Владиславом уже на двух проектах. В обоих случаях остались довольны) интересный дизайн, качественная проработка макетов! Полное погружение в тематику сайта!</p>
+ </div>
+ </div>
+ </div>
+
+ </div><!-- /.row -->
+ </div><!-- /.container --> 
+       
+        <div class="container">
+            <div class="row text-center mt-5">
+                <div class="col-12">
+                   <p class="text-white fw-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime assumenda aliquam, quod corrupti <br>quaerat laboriosam aut atque, dolorem, excepturi ea molestias non illum. Perferendis, dignissimos.</p> 
+                </div>
+            </div>
+        </div>               
+                                   
+         <div class="container">
+            <div class="row text-center mt-5">
+                <div class="col-12">
+                  <p class="fa-solid fa-ellipsis fs-1 text-warning"></p>
+                </div>
+            </div>
+        </div>                                           
+        </section>  
+                  <section class="block"></section>                           
+   <section class="fon-5" id="contacts">
+         <div class="contanier">
+            <div class="row justify-content-center text-center w-100">
+                    <div class="col-12">
+                        <h1 class="text-light">Мои контакты</h1>
+              </div>
+          </div>
+       </div>
+    <div class="container">
+                  <div class="row justify-content-center text-center  mt-3 ">
+ <div class="col-sm-6 col-md-4  mt-5 pt-5 ">
+        <p class="fa-brands fa-periscope text-light"></p>
+        <p class="text-light">Россия г.Тюмень</p>
+        </div>
+ <div class="col-sm-6 col-md-4  mt-5 pt-5">  
+        <p class="fa-regular fa-envelope text-light"></p>
+        <p class="text-light">vlad.cherdancev.93@mail.ru</p>
+        </div>
+ <div class="col-sm-6 col-md-4  mt-5 pt-5">
+       <p class="fa-solid fa-phone text-light"></p>
+       <p class="text-light">+7(982)9225652</p>
+        </div>
+            </div>  
+                </div>         
+         <div class="contanier">
+            <div class="row justify-content-center text-center  mt-3 w-100 ">
+                    <div class="col-12">
+                        <h1 class="text-light">Оставьте мне сообщение</h1>
+                    </div> 
+            </div>
+          </div>   
+        
+ <div class="container">
+<div class="row">
+<div class="col-md-4"> </div>
+<div class="col-md-4">
+   <form action="php/mail.php" method="post">
+  
+<div class="form-group">
+   <label class="text-white fw-bold" for="name">Ваше имя:</label>
+   <input type="name" name="user_name" required class="form-control" id="inputname" placeholder="Имя">
+</div>
+
+
+<div class="form-group">
+   <label class="text-white fw-bold" for="email1">E-mail:</label>
+   <input type="email" name="user_email" required class="form-control" id="inputemail1" placeholder="Email">
+</div>
+
+
+<div class="form-group">
+   <label class="text-white fw-bold" for="phone">Номер телефона:</label>
+   <input type="phone" name="user_phone" required class="form-control" id="inputTell" placeholder="телефон">
+</div>
+
+<div class="form-group">
+   <label class="text-white fw-bold" for="message">Сообщение:</label>
+   <textarea class="form-control"  name="message" rows="3"></textarea>
+</div>
+  <button  type="submit" class="btn btn-primary ribbon  text-white text-center enter">Отправить сообщение</button>
+</form>
+</div>
+<div class="col-md-4"> </div>
+ </div>
+</div>
+                   
+    <div class="container mt-5 pt-5">
+        <div class="row justify-content-center ">
+          <div class="col-12">
+                <div id="map-container-google-3" class="z-depth-1-half map-container-3">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4435.439383011139!2d65.52859464274994!3d57.15110034970466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43bbe1643d5ed3d5%3A0xcafebd4a314a6ad2!2z0KbQtdC90YLRgNCw0LvRjNC90YvQuSDQvtC60YDRg9CzLCDQotGO0LzQtdC90YwsINCi0Y7QvNC10L3RgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8!5e1!3m2!1sru!2sus!4v1654376605284!5m2!1sru!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+           </div> 
+        </div>
+    </div>  
+     <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 ">
+                <span class="text-bg-secondary p-1">Copyright@ 2022 Черданцев Владислав. Design by Web</span>
+            </div>
+        </div>
+    </div>
+</section>  
+
+<script src="js/jquery-3.6.0.min.js"></script>    
+<script src="js/maskedinput.min.js"></script>                  
+<script src="js/myScript.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/7c133b23af.js" crossorigin="anonymous"></script>   
+</body>
+
+</html>
