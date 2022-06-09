@@ -14,7 +14,7 @@ $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'vlad_web-developer.93@bk.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'VladInvestor19932017'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Password = 'lSGs4HuA4cZJe02ZIfGv'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
@@ -29,7 +29,7 @@ $mail->addAddress('vlad.cherdancev.93@mail.ru');     // Кому будет ух
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Тема письма';
-$mail->Body    = '' ."скрипт сработал! <br>". $name. "<br>".  $email. "<br>". $phone;
+$mail->Body    = '' ."скрипт сработал! <br>".;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
