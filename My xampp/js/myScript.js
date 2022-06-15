@@ -1,10 +1,10 @@
   
 
-/*таймер на модальное окно
+/*таймер на модальное окно*/
 setTimeout(function(){ 
     $("#modalopen").click();
 }, 10000); 
-*/
+
  /*Маска на мои контакты*/ 
 
 $(document).ready(function($){
@@ -154,7 +154,7 @@ $("select").on("change", function(){
    });
   
 
-/*Расчет стоимости*/
+/*Расчет стоимости animation*/
 jQuery(document).ready(function($){
     var bArray = [];
     var sArray = [4,6,8,10];

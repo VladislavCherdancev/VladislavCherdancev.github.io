@@ -2,12 +2,22 @@
     font-family: arial, sans-serif;
 }
 
- @media (max-width: 412px){
+ @media (max-width: 1200px){
       #size{
-    font-size: 10px;
+    font-size: 15px;
            }
     }
-
+@media (max-width: 412px){
+      #size{
+    font-size: 15px;
+           }
+    }
+@media (max-width: 1200px){
+     .size1{
+    font-size: 11px;
+    margin-right: 10px;
+           }
+    }
 nav{
     width: 100%;
     height: 60px;
@@ -34,7 +44,7 @@ nav{
     float: left;
     line-height: 60px;
     color: white;
-    margin-right: 35px;
+    margin-right: 30px;
    font-size: 14px;
     text-transform: uppercase;
     -webkit-animation: topmenu 0.5s ease forwards;
@@ -131,6 +141,8 @@ text-shadow: rgb(204, 204, 204) 0px 1px 0px, rgb(201, 201, 201) 0px 2px 0px, rgb
  .box .title{ margin: 10px 0; }
  .box .box-content{ padding: 15px; }
 }
+/*Карусель Отзывы*/
+
 
 .title__containe{
     float:left;
@@ -158,7 +170,6 @@ text-shadow: rgb(204, 204, 204) 0px 1px 0px, rgb(201, 201, 201) 0px 2px 0px, rgb
 }
 
 .title__containe a{
-    float: left;
     height: 40px;
     
     border: 3px solid white;
@@ -179,15 +190,15 @@ text-shadow: rgb(204, 204, 204) 0px 1px 0px, rgb(201, 201, 201) 0px 2px 0px, rgb
     
 @media (max-width: 1200px){
     .title__containe h1{
-    font-size: 35px;
+    font-size: 30px;
            }
     }
 @media (max-width: 990px){
     .title__containe h1{
-    font-size: 30px;
+    font-size: 25px;
            }
     }
-@media (max-width: 541px){
+@media (max-width: 1000px){
     .title__containe{
     margin-top: 300px;
            }
@@ -359,8 +370,8 @@ transform: scale(1.2);
 .fon-0{
       width: 100%; 
      height: 550px;
-    background: url(../img/Fon-1.jpg);
-    background-size: cover;
+    background: url(../img/Fon-1.jpg)center/cover;
+    
      
 }
 
@@ -370,6 +381,17 @@ transform: scale(1.2);
     height:750px;
            }
     }
+@media (max-width: 330px){
+    .fon-0{
+    height:850px;
+           }
+    }
+@media (max-width: 250px){
+    .fon-0{
+    height:1000px;
+           }
+    }
+
 
 
                              /*Между блоками*/
@@ -395,11 +417,22 @@ transform: scale(1.2);
     height:550px;
            }
     }
- @media (max-width: 578px){
+ @media (max-width: 770px){
        .fon{
-    height:800px;
+    height:650px;
            }
     }
+@media (max-width: 580px){
+       .fon{
+    height:750px;
+           }
+    }
+@media (max-width: 345px){
+       .fon{
+    height:1000px;
+           }
+    }
+
  
 
 
@@ -411,12 +444,18 @@ transform: scale(1.2);
      background-size: cover;
     background-position: center center;
 }
-@media (max-width: 420px){
+@media (max-width: 995px){
        .fon-1{
-    height:1050px;
+    height:1000px;
            }
     }
-                             /*Расчет стоимости */
+@media (max-width: 440px){
+       .fon-1{
+    height:1220px;
+           }
+    }
+
+                            /*Расчет стоимости */
 
 .fon-2{
     height: 600px;
@@ -428,14 +467,14 @@ transform: scale(1.2);
                              /*Немного статистики*/
 
 .fon-3{
-     height: 400px;
+     height: 300px;
      background: url(../img/Fon-5.png);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }
 
-@media (max-width: 420px){
+@media (max-width: 990px){
        .fon-3{
     height:680px;
            }
@@ -445,28 +484,32 @@ transform: scale(1.2);
                                /*отзывы*/
 
 .fon-4{
-    height: 500px;
+    height: 450px;
     background: url(../img/Fon%20-7.jpg);
     background-size: cover;
     background-position: center center;
 }
-@media (max-width: 420px){
+@media (max-width: 990px){
        .fon-4{
-    height: 1050px;
+    height: 700px;
+           }
+    }@media (max-width: 575px){
+       .fon-4{
+    height: 1320px;
            }
     }
 
                            /*Мои контакты*/
 
 .fon-5{
-     height: 1150px;
+     height: 1260px;
        background: url(../img/fon-8.jpg);
     background-size: cover;
      background-position: center center;
 }
-@media (max-width: 420px){
+@media (max-width: 580px){
        .fon-5{
-    height: 1250px;
+    height: 1450px;
            }
     }
 
@@ -651,7 +694,8 @@ transform: scale(1.2);
 	color: #fff;
 	font-size: 4em;
 	position: absolute;
-	transform: translate(-60%, -40%);
+	margin-left: 20px;
+    
    
 }
 
@@ -695,6 +739,26 @@ transform: scale(1.2);
 		);
 	}
 }
+@media (max-width: 780px){
+    .content{
+    font-size: 12px;
+           }
+    }
+@media (max-width: 460px){
+    .content{
+    font-size: 9px;
+           }
+    }
+@media (max-width: 355px){
+    .content{
+    font-size: 7px;
+           }
+    }
+@media (max-width: 300px){
+    .content{
+    font-size: 4px;
+           }
+    }
 
                                    /*Что я умею*/
 
@@ -702,7 +766,7 @@ transform: scale(1.2);
 .waviy1 span {
   position: relative;
   display: inline-block;
-  font-size: 40px;
+  font-size: 32px;
   color: white;
   text-transform: uppercase;
   animation: flip 2s infinite;
@@ -873,7 +937,7 @@ svg {
   display:flex;
   justify-content: center;
   align-items: center;
-  min-height: 30vh;
+  min-height: 22vh;
 }
 
 .nshare {
